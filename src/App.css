@@ -1,0 +1,35 @@
+.about-info-body{
+  text-align: justify;
+}
+.img-sty{
+  height : 300px;
+  width : 700px;
+}
+
+footer {
+  color: white;
+}
+
+.unit-left {
+  margin-left: 10px;
+}
+
+.footer-bg {
+  background-color: #294481;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+
+}
+
+h6 {
+  font-family: Oswald, sans-serif;
+  font-size: 18px;
+
+}
+
+.unit-body {
+  text-align: justify;
+}
