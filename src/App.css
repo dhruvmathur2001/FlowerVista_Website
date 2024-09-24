@@ -1,4 +1,30 @@
+body{
+  background-image: url("./assets/Images/background/b3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+
+.nav-size{
+  font-size: 1.2rem;
+}
+.about-p{
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+@media (min-width: 768px) {
+  .about-p {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+.about-info-heading{
+  font-family:cursive;
+  font-size: 3rem;
+}
+
 .about-info-body{
+  font-family:Verdana, Geneva, Tahoma, sans-serif ;
   text-align: justify;
 }
 .img-sty{
@@ -6,6 +32,32 @@
   width : 700px;
 }
 
+.bg-col{
+  background-color: #313d2a;
+}
+.brandtext {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Dancing Script", cursive;
+}
+.link-hover:hover{
+  background-color: yellow !important;
+  color: black !important;
+  border: 2px solid black !important;
+  transform: scale(1.1);
+  
+}
+.bt{
+  border-top: 1px solid #000;
+}
+a{
+  text-decoration: none;
+}
+
+.log-color{
+  background-color: cyan;
+  color: yellow;
+}
 footer {
   color: white;
 }
@@ -15,7 +67,7 @@ footer {
 }
 
 .footer-bg {
-  background-color: #294481;
+  background-color: #313d2a;
 }
 
 footer a {
@@ -32,4 +84,171 @@ h6 {
 
 .unit-body {
   text-align: justify;
+}
+
+.about-bg{
+
+  background-image: url("./assets/Images/background/b3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+
+.prod-bg{
+  background-image: url("./assets/Images/background/b4.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.prod-p {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.card {
+  height: 550px;
+}
+
+.card-img-top {
+  height: 400px;
+  object-fit: cover;
+}
+
+.card-hover:hover{
+  transform: scale(1.05);
+}
+.card-bg-color{
+  background-color: yellow;
+}
+
+
+
+
+/* Reviews */
+
+#REVIEWS {
+  /* background-color: rgb(99, 153, 153); */
+  background-image: url("./assets/Images/background/b2.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#REVIEWS h1 {
+  font-family: NIB Light Italic, serif;
+  font-size: 3rem;
+  text-align: center;
+  font-style: italic;
+  color: yellow;
+}
+.rev-img{
+  height: 40px;
+  width: 400px;
+}
+.review-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .review-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .review-box {
+    width: 100%;
+    justify-content: center;
+    /* Center the single review box */
+  }
+
+  .reviews {
+    width: 100%;
+    margin: 0;
+    /* Remove side margins */
+  }
+
+}
+
+.review-box {
+  display: flex;
+  overflow-x: hidden;
+  /* Hide the horizontal scrollbar */
+  
+  width: 100%;
+  /* Adjust width as needed */
+  padding-bottom: 20px;
+  /* Add padding if necessary */
+
+}
+
+
+
+.reviews {
+  min-width: 32%;
+  margin: 10px;
+  padding: 20px;
+  padding-bottom: 5px;
+  background-color: rgb(68, 47, 51);
+  border-radius: 5px;
+  color: white;
+}
+
+.reviews p {
+  text-align: justify;
+  font-size: 1.2rem;
+}
+
+.review_rating {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.rev_img img {
+  height: 3.5rem;
+  width: 3.5rem;
+  border: 1px solid;
+  border-radius: 50%;
+}
+
+.name {
+  font-size: 1.3rem;
+}
+
+.ratings {
+  margin-top: 4px;
+}
+
+.scroll-button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.scroll-button.left {
+  position: absolute;
+  left: 0;
+}
+
+.scroll-button.right {
+  position: absolute;
+  right: 0;
+}
+
+.checked {
+  color: orange;
+}
+
+
+.carousel-item img {
+  height: 610px;
+  /* Adjust this value to set the desired height */
+  object-fit: cover;
+  /* This will ensure the image covers the area without distortion */
 }
