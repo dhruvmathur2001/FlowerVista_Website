@@ -1,187 +1,67 @@
+import i1 from "../assets/images/i1.jpg";
+import lily from "../assets/images/lily.jpg";
+import orchid from "../assets/images/orchid.webp";
+import tulip from "../assets/images/tulip.jpg";
+import dahlias from "../assets/images/dahlias.jpg";
+import begonies from "../assets/images/begonies.avif";
+import daisy from "../assets/images/Daisy.jpg";
+import hydrangeas from "../assets/images/hydrangeas.avif";
+import sunflower from "../assets/images/sunflower.jpeg";
+import peony from "../assets/images/peony.png";
+import petunia from "../assets/images/petunia.jpg";
+import marigold from "../assets/images/marigold.jpg";
 
+const products = [
+  { id: 1, title: "ROSE", price: 450, image: i1 },
+  { id: 2, title: "LILY", price: 440, image: lily },
+  { id: 3, title: "ORCHIDS", price: 650, image: orchid },
+  { id: 4, title: "TULIP", price: 540, image: tulip },
+  { id: 5, title: "DAHLIAS", price: 540, image: dahlias },
+  { id: 6, title: "BEGONIES", price: 540, image: begonies },
+  { id: 7, title: "DAISY", price: 320, image: daisy },
+  { id: 8, title: "HYDRANGEAS", price: 640, image: hydrangeas },
+  { id: 9, title: "SUNFLOWER", price: 340, image: sunflower },
+  { id: 10, title: "PEONY", price: 440, image: peony },
+  { id: 11, title: "PETUNIA", price: 500, image: petunia },
+  { id: 12, title: "MARIGOLD", price: 340, image: marigold },
+];
 
-function Products(){
+function Products() {
+  return (
+    <div className="container-fluid px-5 prod-p prod-bg">
+      <div className="products" id="PRODUCTS">
+        <div className="heading">
+          <h1 className="text-center">PRODUCTS</h1>
+        </div>
 
-    return(
-        <>
-
-       <div classNameName="container-fluid">
-        <div className="products" id="PRODUCTS">
-    <div className="heading">
-        <h1>PRODUCTS</h1>
+        <div className="line row pt-3">
+          {products.map((product) => (
+            <div key={product.id} className="col-lg-3 col-md-6 mb-4">
+              <div className="card border border-dark card-hover">
+                <img
+                  src={product.image}
+                  className="card-img-top img-fluid"
+                  alt={product.title}
+                />
+                <div className="card-body text-center bt card-bg-color">
+                  <h5 className="card-title">{product.title}</h5>
+                  <p className="card-text">
+                    <a href="#" className="prod-link">
+                      Rs. {product.price}
+                    </a>
+                    <span className="or_cost ms-2">
+                      <del>Rs. {product.price + 60}</del>
+                    </span>
+                  </p>
+                  <button className="btn btn-primary">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
-
-    <div className="line row">
-        <div className="col-lg-3 col-md-6 mb-4">
-            <div className="card">
-                <img src="./Images/i1.jpg" className="card-img-top img-fluid" alt="Rose"/>
-                <div className="card-body text-center">
-                    <h5 className="card-title">ROSE</h5>
-                    <p className="card-text">
-                        <a href="#" className="prod-link">Rs. 540</a>
-                        <span className="or_cost"><del>Rs. 600</del></span>
-                    </p>
-                    <button className="btn btn-primary">Add to Cart</button>
-                </div>
-            </div>
-        </div>
-        <div className="col-lg-3 col-md-6 mb-4">
-            <div className="card">
-                <img src="./Images/lily.jpg" className="card-img-top img-fluid" alt="Lily"/>
-                <div className="card-body text-center">
-                    <h5 className="card-title">LILY</h5>
-                    <p className="card-text">
-                        <a href="#" className="prod-link">Rs. 540</a>
-                        <span className="or_cost"><del>Rs. 600</del></span>
-                    </p>
-                    <button className="btn btn-primary">Add to Cart</button>
-                </div>
-            </div>
-        </div>
-        <div className="col-lg-3 col-md-6 mb-4">
-            <div className="card">
-                <img src="./Images/orchid.webp" className="card-img-top img-fluid" alt="Orchids"/>
-                <div className="card-body text-center">
-                    <h5 className="card-title">ORCHIDS</h5>
-                    <p className="card-text">
-                        <a href="#" className="prod-link">Rs. 540</a>
-                        <span className="or_cost"><del>Rs. 600</del></span>
-                    </p>
-                    <button className="btn btn-primary">Add to Cart</button>
-                </div>
-            </div>
-        </div>
-        <div className="col-lg-3 col-md-6 mb-4">
-            <div className="card">
-                <img src="./Images/tulip.jpg" className="card-img-top img-fluid" alt="Tulip"/>
-                <div className="card-body text-center">
-                    <h5 className="card-title">TULIP</h5>
-                    <p className="card-text">
-                        <a href="#" className="prod-link">Rs. 540</a>
-                        <span className="or_cost"><del>Rs. 600</del></span>
-                    </p>
-                    <button className="btn btn-primary">Add to Cart</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div className="line row">
-        <div className="col-lg-3 col-md-6 mb-4">
-            <div className="card">
-                <img src="./Images/dahlias.jpg" className="card-img-top img-fluid" alt="Dahlias"/>
-                <div className="card-body text-center">
-                    <h5 className="card-title">DAHLIAS</h5>
-                    <p className="card-text">
-                        <a href="#" className="prod-link">Rs. 540</a>
-                        <span className="or_cost"><del>Rs. 600</del></span>
-                    </p>
-                    <button className="btn btn-primary">Add to Cart</button>
-                </div>
-            </div>
-        </div>
-        <div className="col-lg-3 col-md-6 mb-4">
-            <div className="card">
-                <img src="./Images/begonies.avif" className="card-img-top img-fluid" alt="Begonies"/>
-                <div className="card-body text-center">
-                    <h5 className="card-title">BEGONIES</h5>
-                    <p className="card-text">
-                        <a href="#" className="prod-link">Rs. 540</a>
-                        <span className="or_cost"><del>Rs. 600</del></span>
-                    </p>
-                    <button className="btn btn-primary">Add to Cart</button>
-                </div>
-            </div>
-        </div>
-        <div className="col-lg-3 col-md-6 mb-4">
-            <div className="card">
-                <img src="./Images/Daisy.jpg" className="card-img-top img-fluid" alt="Daisy"/>
-                <div className="card-body text-center">
-                    <h5 className="card-title">DAISY</h5>
-                    <p className="card-text">
-                        <a href="#" className="prod-link">Rs. 540</a>
-                        <span className="or_cost"><del>Rs. 600</del></span>
-                    </p>
-                    <button className="btn btn-primary">Add to Cart</button>
-                </div>
-            </div>
-        </div>
-        <div className="col-lg-3 col-md-6 mb-4">
-            <div className="card">
-                <img src="./Images/hydrangeas.avif" className="card-img-top img-fluid" alt="Hydrangeas"/>
-                <div className="card-body text-center">
-                    <h5 className="card-title">HYDRANGEAS</h5>
-                    <p className="card-text">
-                        <a href="#" className="prod-link">Rs. 540</a>
-                        <span className="or_cost"><del>Rs. 600</del></span>
-                    </p>
-                    <button className="btn btn-primary">Add to Cart</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div className="line row">
-        <div className="col-lg-3 col-md-6 mb-4">
-            <div className="card">
-                <img src="./Images/sunflower.jpeg" className="card-img-top img-fluid" alt="Sunflower"/>
-                <div className="card-body text-center">
-                    <h5 className="card-title">SUNFLOWER</h5>
-                    <p className="card-text">
-                        <a href="#" className="prod-link">Rs. 540</a>
-                        <span className="or_cost"><del>Rs. 600</del></span>
-                    </p>
-                    <button className="btn btn-primary">Add to Cart</button>
-                </div>
-            </div>
-        </div>
-        <div className="col-lg-3 col-md-6 mb-4">
-            <div className="card">
-                <img src="./Images/peony.png" className="card-img-top img-fluid" alt="Peony"/>
-                <div className="card-body text-center">
-                    <h5 className="card-title">PEONY</h5>
-                    <p className="card-text">
-                        <a href="#" className="prod-link">Rs. 540</a>
-                        <span className="or_cost"><del>Rs. 600</del></span>
-                    </p>
-                    <button className="btn btn-primary">Add to Cart</button>
-                </div>
-            </div>
-        </div>
-        <div className="col-lg-3 col-md-6 mb-4">
-            <div className="card">
-                <img src="./Images/petunia.jpg" className="card-img-top img-fluid" alt="Petunia"/>
-                <div className="card-body text-center">
-                    <h5 className="card-title">PETUNIA</h5>
-                    <p className="card-text">
-                        <a href="#" className="prod-link">Rs. 540</a>
-                        <span className="or_cost"><del>Rs. 600</del></span>
-                    </p>
-                    <button className="btn btn-primary">Add to Cart</button>
-                </div>
-            </div>
-        </div>
-        <div className="col-lg-3 col-md-6 mb-4">
-            <div className="card">
-                <img src="./Images/marigold.jpg" className="card-img-top img-fluid" alt="Marigold"/>
-                <div className="card-body text-center">
-                    <h5 className="card-title">MARIGOLD</h5>
-                    <p className="card-text">
-                        <a href="#" className="prod-link">Rs. 540</a>
-                        <span className="or_cost"><del>Rs. 600</del></span>
-                    </p>
-                    <button className="btn btn-primary">Add to Cart</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-       </div>
-        
-        </>
-    )
-
+  );
 }
 
 export default Products;
