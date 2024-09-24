@@ -12,7 +12,7 @@ import Logo from "../assets/Images/logo.png";
 function Footer() {
   return (
     <>
-      <footer className="section-relative section-top-66 section-bottom-34 page-footer context-dark mt-5 pt-5 pb-3 footer-bg">
+      <footer className="section-relative section-top-66 section-bottom-34 page-footer context-dark  pt-5 pb-3 footer-bg">
         <div className="container">
           <div className="row justify-content-md-center text-xl-left">
             <div className="col-md-8 col-lg-12">
@@ -21,9 +21,7 @@ function Footer() {
                   <h6>NEWSLETTER</h6>
                   <hr className="text-subline" />
                   <p>
-                    Enter your email address to receive up-to-date news, new
-                    patient information and other useful stuff, delivered right
-                    to your inbox.
+                    Enter your email address to receive infomartion about the new variety of flowers to be available.
                   </p>
                   <form
                     className="rd-mailform"
@@ -64,11 +62,11 @@ function Footer() {
                         </div>
                         <div className="unit-body">
                           <a className="text-gray-light unit-left" href="tel:#">
-                            +91-11-, 26926275, 26910910
+                            +91-11-43634625, 69109109
                           </a>
                           <span className="text-gray-light">, </span>
                           <a className="text-gray-light" href="tel:#">
-                            +91-11-,26926370
+                            +91-11-26926370
                           </a>
                         </div>
                       </div>
@@ -80,8 +78,8 @@ function Footer() {
                         </div>
                         <div className="unit-body">
                           <a className="text-gray-light unit-left" href="#">
-                            NSIC Bhawan, Okhla Industrial Estate Ph. III, New
-                            Delhi- 110 020, India
+                            FlowerVista Gallery, ABC Nagar, New
+                            Delhi, India
                           </a>
                         </div>
                       </div>
@@ -96,7 +94,7 @@ function Footer() {
                             className="text-gray-light unit-left"
                             href="mailto:#"
                           >
-                            mic@nsic.co.in
+                           mail@flowervista.com
                           </a>
                         </div>
                       </div>
@@ -152,7 +150,7 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="container mt-5">
+        <div className="container ">
           <p className="text-gray text-lg-left text-md-center">
             &copy; <span className="copyright-year text-center"></span> All
             Rights Reserved.
