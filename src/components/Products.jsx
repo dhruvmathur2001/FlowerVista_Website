@@ -1,15 +1,15 @@
-import i1 from "../assets/images/i1.jpg";
-import lily from "../assets/images/lily.jpg";
-import orchid from "../assets/images/orchid.webp";
-import tulip from "../assets/images/tulip.jpg";
-import dahlias from "../assets/images/dahlias.jpg";
-import begonies from "../assets/images/begonies.avif";
-import daisy from "../assets/images/Daisy.jpg";
-import hydrangeas from "../assets/images/hydrangeas.avif";
-import sunflower from "../assets/images/sunflower.jpeg";
-import peony from "../assets/images/peony.png";
-import petunia from "../assets/images/petunia.jpg";
-import marigold from "../assets/images/marigold.jpg";
+import i1 from "../assets/Images/i1.jpg";
+import lily from "../assets/Images/lily.jpg";
+import orchid from "../assets/Images/orchid.webp";
+import tulip from "../assets/Images/tulip.jpg";
+import dahlias from "../assets/Images/dahlias.jpg";
+import begonies from "../assets/Images/begonies.avif";
+import daisy from "../assets/Images/Daisy.jpg";
+import hydrangeas from "../assets/Images/hydrangeas.avif";
+import sunflower from "../assets/Images/sunflower.jpeg";
+import peony from "../assets/Images/peony.png";
+import petunia from "../assets/Images/petunia.jpg";
+import marigold from "../assets/Images/marigold.jpg";
 
 const products = [
   { id: 1, title: "ROSE", price: 450, image: i1 },
