@@ -8,6 +8,9 @@ body{
 .nav-size{
   font-size: 1.2rem;
 }
+.nav-bg{
+  background-color: #513077;
+}
 .about-p{
   padding-top: 80px;
   padding-bottom: 100px;
@@ -67,7 +70,7 @@ footer {
 }
 
 .footer-bg {
-  background-color: #313d2a;
+  background-color: #341756;
 }
 
 footer a {
@@ -95,7 +98,7 @@ h6 {
 }
 
 .prod-bg{
-  background-image: url("./assets/Images/background/b4.avif");
+  background-image: url("./assets/Images/background/b5.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
