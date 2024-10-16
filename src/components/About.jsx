@@ -2,7 +2,7 @@ import aboutImage from "../assets/Images/aboutWeb.webp"
 function About(){
 
     return (
-      <>
+      <div className="container-fluid about-bg" id="ABOUT">
         <div className="container about-p about-bg">
           <div className="text-center mb-5 text-light">
             <h1>ABOUT US</h1>
@@ -35,7 +35,7 @@ function About(){
             </div>
           </div>
         </div>
-      </>
+      </div>
     );
 
 }
